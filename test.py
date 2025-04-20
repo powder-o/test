@@ -11,11 +11,11 @@ def convert_to_grayscale(image_path):
 
     # Extract original filename
     filename = os.path.basename(image_path)
-    output_pt = os.path.join(output_dir, filename)
+    output_path = os.path.join(output_dir, filename)
 
     # Save the grayscale image
-    img.save(output_pt)
-    print(f"Saved the fucking grayscale image")
+    img.save(output_path)
+    print(f"Saved grayscale image to {output_path}")
 
 # Example usage
 image_path = input("Enter image path: ")
